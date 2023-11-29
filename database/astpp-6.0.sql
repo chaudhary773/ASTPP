@@ -1119,6 +1119,9 @@ CREATE TABLE `ip_map` (
 --
 
 LOCK TABLES `ip_map` WRITE;
+INSERT INTO `ip_map` (`id`, `name`, `ip`, `accountid`, `reseller_id`, `pricelist_id`, `prefix`, `context`, `status`, `created_date`, `last_modified_date`) VALUES
+(1,	'Telnyx US 1',	'192.76.120.10/32',	2,	0,	0,	'',	'default',	0,	'2023-11-28 11:13:51',	'2023-11-28 11:13:51'),
+(2,	'Telnyx US 2',	'64.16.250.10/32',	2,	0,	0,	'',	'default',	0,	'2023-11-28 11:14:00',	'2023-11-28 11:14:00');
 /*!40000 ALTER TABLE `ip_map` DISABLE KEYS */;
 /*!40000 ALTER TABLE `ip_map` ENABLE KEYS */;
 UNLOCK TABLES;
